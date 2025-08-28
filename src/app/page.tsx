@@ -27,7 +27,7 @@ export default function Home() {
               height={40}
               className="rounded-full"
             />
-            <h1 className="text-xl font-bold text-orange-700">Buñuelos Días</h1>
+            <h1 className="text-xl font-bold text-orange-700">Buñuelos Días S.A.S.</h1>
           </div>
 
           {/* Navegación */}
