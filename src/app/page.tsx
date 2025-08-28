@@ -75,7 +75,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-lg transition transform hover:scale-110"
             >
-              📲 Haz tu pedido
+              📲 Comprar
             </Link>
           </div>
         </section>
