@@ -10,7 +10,7 @@ export default function Home() {
     { name: "Buñuelo + Extra Queso", price: "3.000", img: "/images/bunuelo-queso.png" },
     { name: "Buñuelo + Extra Arequipe", price: "3.000", img: "/images/bunuelo-arequipe.png" },
     { name: "Buñuelo + Queso + Arequipe", price: "3.000", img: "/images/bunuelo-queso-arequipe.png" },
-    { name: "Super Buñuelo + Extra Queso +  Extra Arequipe", price: "3.500", img: "/images/super-bunuelo-queso-arequipe.png" },
+    { name: "Super Buñuelo + Extra Queso + Extra Arequipe", price: "3.500", img: "/images/super-bunuelo-queso-arequipe.png" },
   ];
 
   return (
@@ -21,15 +21,27 @@ export default function Home() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl font-extrabold text-orange-700 drop-shadow-lg"
+          className="text-5xl md:text-6xl font-extrabold drop-shadow-lg"
         >
-          ¡Buñuelos Días!
-          Los Mejores Buñuelos 
+          <span className="text-orange-700">¡Buñuelos Días!</span>{" "}
+          <span className="text-green-600">Los Mejores Buñuelos</span>
         </motion.h1>
         <p className="mt-6 text-lg text-gray-700 max-w-xl mx-auto leading-relaxed">
           Crujientes por fuera, suaves por dentro. Hechos con amor y tradición
           colombiana. ¡Pídelos ahora y disfruta el sabor todo el año!
         </p>
+
+        {/* Botón WhatsApp en Hero */}
+        <div className="mt-8">
+          <Link
+            href="https://wa.me/573223820637?text=Hola%20quiero%20hacer%20un%20pedido%20de%20buñuelos!%20🥯"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-lg transition transform hover:scale-110"
+          >
+            📲 Haz tu pedido
+          </Link>
+        </div>
       </section>
 
       {/* Productos destacados */}
@@ -46,7 +58,7 @@ export default function Home() {
                 alt={item.name}
                 width={400}
                 height={300}
-                className="rounded-xl mb-4 object-cover w-full h-48"
+                className="rounded-xl mb-4 object-cover w-full h-72 md:h-48"
               />
             </motion.div>
             <h3 className="text-xl font-bold text-orange-700 text-center">
@@ -59,9 +71,9 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-orange-700 text-white w-full text-center py-6 mt-8">
-        <p className="font-semibold">📍 Encuéntranos en Bogotá</p>
+        <p className="font-semibold">📍 Encuéntranos en tu barrio</p>
         <p className="text-sm mt-1">
-          © {new Date().getFullYear()} Buñuelos Días. Todos los derechos
+          © {new Date().getFullYear()} Buñuelos Inge. Todos los derechos
           reservados.
         </p>
       </footer>
@@ -71,9 +83,15 @@ export default function Home() {
         href="https://wa.me/573223820637?text=Hola%20quiero%20hacer%20un%20pedido%20de%20buñuelos!%20🥯"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-lg transition transform hover:scale-110 flex items-center justify-center w-14 h-14"
+        className="fixed bottom-6 right-6 w-16 h-16 rounded-full shadow-lg transition transform hover:scale-110"
       >
-        📲
+        <Image
+          src="/images/whatsapp-logo.png" // logo guardado en /public/images
+          alt="WhatsApp"
+          width={64}
+          height={64}
+          className="rounded-full"
+        />
       </Link>
     </main>
   );
