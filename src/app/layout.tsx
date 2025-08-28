@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "¡Buñuelos Días!",
   description: "Los mejores buñuelos de Bogotá",
    icons: {
-    icon: "/images/Favicon.png", // tu archivo en /public
+     icon: "/favicon.png", // o favicon.ico
   },
 };
 
