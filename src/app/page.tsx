@@ -3,26 +3,17 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   const [count, setCount] = useState(0);
 
   const productos = [
-    {
-      name: "Buñuelos Tradicionales",
-      price: "8.000",
-      img: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?fit=crop&w=600&q=80",
-    },
-    {
-      name: "Buñuelos con Queso",
-      price: "10.000",
-      img: "https://images.unsplash.com/photo-1621996346565-7c634cf9f1ce?fit=crop&w=600&q=80",
-    },
-    {
-      name: "Combo Buñuelos + Chocolate",
-      price: "15.000",
-      img: "https://images.unsplash.com/photo-1604908811444-0e69aa6ab0ec?fit=crop&w=600&q=80",
-    },
+    { name: "Buñuelo Tradicional", price: "2.500", img: "/images/bunuelo-tradicional.png" },
+    { name: "Buñuelo + Extra Queso", price: "3.000", img: "/images/bunuelo-queso.png" },
+    { name: "Buñuelo + Extra Arequipe", price: "3.000", img: "/images/bunuelo-arequipe.png" },
+    { name: "Buñuelo + Queso + Arequipe", price: "3.000", img: "/images/bunuelo-queso-arequipe.png" },
+    { name: "Super Buñuelo + Extra Queso +  Extra Arequipe", price: "3.500", img: "/images/super-bunuelo-queso-arequipe.png" },
   ];
 
   return (
@@ -50,6 +41,18 @@ export default function Home() {
         >
           Comprar Ahora ({count})
         </motion.button>
+
+        {/* Botón WhatsApp */}
+        <div className="mt-6">
+          <Link
+            href="https://wa.me/573223820637?text=Hola%20quiero%20hacer%20un%20pedido%20de%20buñuelos!%20🥯"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-lg transition transform hover:scale-110"
+          >
+            📲 Haz tu pedido
+          </Link>
+        </div>
       </section>
 
       {/* Productos destacados */}
