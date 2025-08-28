@@ -21,7 +21,7 @@ export default function Home() {
           {/* Logo + Nombre */}
           <div className="flex items-center gap-3">
             <Image
-              src="/images/bunuelo-tradicional.png"
+              src="/images/Favicon.png"
               alt="Logo Buñuelos"
               width={40}
               height={40}
@@ -60,8 +60,6 @@ export default function Home() {
             className="text-5xl md:text-6xl font-extrabold drop-shadow-lg"
           >
             <span className="text-orange-700">¡Buñuelos Días!</span>
-            <br />
-            <span className="text-green-600">Los Mejores Buñuelos</span>
           </motion.h1>
           <p className="mt-6 text-lg text-gray-700 max-w-xl mx-auto leading-relaxed">
             Crujientes por fuera, suaves por dentro. Hechos con amor y tradición colombiana.  
