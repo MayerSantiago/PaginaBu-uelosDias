@@ -86,7 +86,7 @@ export default function Home() {
         className="fixed bottom-6 right-6 w-16 h-16 rounded-full shadow-lg transition transform hover:scale-110"
       >
         <Image
-          src="/images/whatsapp-logo.png" // logo guardado en /public/images
+          src="/images/whatsapp-logo.jpg" // logo guardado en /public/images
           alt="WhatsApp"
           width={64}
           height={64}
