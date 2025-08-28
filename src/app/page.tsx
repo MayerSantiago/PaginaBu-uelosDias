@@ -11,6 +11,7 @@ export default function Home() {
     { name: "Buñuelo + Extra Arequipe", price: "3.000", img: "/images/bunuelo-arequipe.png" },
     { name: "Buñuelo + Queso + Arequipe", price: "3.000", img: "/images/bunuelo-queso-arequipe.png" },
     { name: "Super Buñuelo + Extra Queso + Extra Arequipe", price: "3.500", img: "/images/super-bunuelo-queso-arequipe.png" },
+    { name: "Buñuelos para negocio", price: "Precios especiales para negocio", img: "/images/bunuelos-negocio.png" },
   ];
 
   return (
