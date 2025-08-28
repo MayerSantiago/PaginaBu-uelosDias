@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-yellow-100 via-orange-200 to-yellow-300 relative">
       {/* Hero Section */}
-      <section className="text-center py-16 px-6">
+      <section className="text-center py-8 px-6">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,6 +24,7 @@ export default function Home() {
           className="text-5xl md:text-6xl font-extrabold drop-shadow-lg"
         >
           <span className="text-orange-700">¡Buñuelos Días!</span>{" "}
+          <br />
           <span className="text-green-600">Los Mejores Buñuelos</span>
         </motion.h1>
         <p className="mt-6 text-lg text-gray-700 max-w-xl mx-auto leading-relaxed">
@@ -32,9 +33,9 @@ export default function Home() {
         </p>
 
         {/* Botón WhatsApp en Hero */}
-        <div className="mt-8">
+        <div className="mt-4">
           <Link
-            href="https://wa.me/573223820637?text=Hola%20quiero%20hacer%20un%20pedido%20de%20buñuelos!%20🥯"
+            href="https://wa.me/573223820637?text=Hola%20quiero%20hacer%20un%20pedido%20de%20buñuelos!%20"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-lg transition transform hover:scale-110"
@@ -71,9 +72,9 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-orange-700 text-white w-full text-center py-6 mt-8">
-        <p className="font-semibold">📍 Encuéntranos en tu barrio</p>
+        <p className="font-semibold">📍 Encuéntranos en Bogotá</p>
         <p className="text-sm mt-1">
-          © {new Date().getFullYear()} Buñuelos Inge. Todos los derechos
+          © {new Date().getFullYear()} Buñuelos Días. Todos los derechos
           reservados.
         </p>
       </footer>
