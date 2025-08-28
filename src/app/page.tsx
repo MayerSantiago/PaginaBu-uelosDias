@@ -35,6 +35,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl font-extrabold text-orange-700 drop-shadow-lg"
         >
+          ¡Buñuelos Días!
           ¡Los Mejores Buñuelos! 🥯
         </motion.h1>
         <p className="mt-6 text-lg text-gray-700 max-w-xl mx-auto leading-relaxed">
